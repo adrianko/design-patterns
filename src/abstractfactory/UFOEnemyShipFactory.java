@@ -9,7 +9,7 @@ public class UFOEnemyShipFactory implements EnemyShipFactory {
 
     @Override
     public ESEngine addESEngine() {
-        return ESUFOEngine();
+        return new ESUFOEngine();
     }
 
 }
