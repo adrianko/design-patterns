@@ -12,7 +12,7 @@ public class UFOEnemyShipBuilding extends EnemyShipBuilding {
             es = new UFOBossEnemyShip(new UFOBossEnemyShipFactory());
             es.setName("UFO Boss Ship");
         }
-        
+
         return es;
     }
 
