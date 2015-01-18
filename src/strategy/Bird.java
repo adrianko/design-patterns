@@ -3,7 +3,7 @@ package strategy;
 public class Bird extends Animal {
 
     public Bird() {
-        flyingType = new CanFly();
+        super.setFlyingType(new CanFly());
     }
 
 }
