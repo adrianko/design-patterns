@@ -1,12 +1,12 @@
 package strategy;
 
-public interface Flys {
+public interface Fly {
 
     String fly();
 
 }
 
-class ItFlys implements Flys {
+class CanFly implements Fly {
 
     public String fly() {
         return "flying";
@@ -14,7 +14,7 @@ class ItFlys implements Flys {
 
 }
 
-class CantFly implements Flys {
+class CantFly implements Fly {
 
     public String fly() {
         return "can't fly";
