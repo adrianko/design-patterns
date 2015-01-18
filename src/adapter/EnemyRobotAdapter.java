@@ -10,16 +10,16 @@ public class EnemyRobotAdapter implements EnemyAttacker {
 
     @Override
     public void fireWeapon() {
-        
+        enemyRobot.smashWithHands();
     }
 
     @Override
     public void driveForward() {
-
+        enemyRobot.walkForward();
     }
 
     @Override
     public void assignDriver(String d) {
-
+        enemyRobot.reactToHuman(d);
     }
 }
