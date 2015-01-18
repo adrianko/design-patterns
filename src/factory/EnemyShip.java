@@ -17,6 +17,10 @@ public abstract class EnemyShip {
         System.out.println(name + " attacks and does " + amtDamage);
     }
 
+    public void setName(String n) {
+        name = n;
+    }
+
     public void setDamage(double d) {
         amtDamage = d;
     }
