@@ -6,5 +6,5 @@ public class UFOEnemyShip extends EnemyShip {
         setName("UFOEnemyShip");
         setDamage(20.0);
     }
-    
+
 }
