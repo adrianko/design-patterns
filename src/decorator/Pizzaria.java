@@ -8,7 +8,9 @@ public class Pizzaria {
      * @param args
      */
     public static void main(String[] args) {
-
+        Pizza p = new TomatoSauce(new Mozzarella(new PlainPizza()));
+        System.out.println("Ingredients: " + p.getDescription());
+        System.out.println("Price: "+ p.getCost());
     }
 
 }
