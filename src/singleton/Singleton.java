@@ -36,7 +36,7 @@ public class Singleton {
     public LinkedList<String> getTiles(int numTiles) {
         LinkedList<String> send = new LinkedList<String>();
         
-        for(int i = 0; i <= numTiles; i++) {
+        for (int i = 0; i <= numTiles; i++) {
             send.add(instance.letterList.remove(0));
         }
         
