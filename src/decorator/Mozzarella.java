@@ -4,7 +4,6 @@ public class Mozzarella extends ToppingDecorator {
 
     public Mozzarella(Pizza pizza) {
         super(pizza);
-        System.out.println("Adding dough");
         System.out.println("Adding moz");
     }
 
