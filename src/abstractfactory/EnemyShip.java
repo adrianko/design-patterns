@@ -24,6 +24,10 @@ public abstract class EnemyShip {
         name = n;
     }
 
+    public String getName() {
+        return name;
+    }
+
     public String toString() {
         return name + " has top speed of " + engine + " and attack of " + weapon;
     }
