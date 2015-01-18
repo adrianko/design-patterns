@@ -4,6 +4,11 @@ import java.util.Scanner;
 
 public class Game {
 
+    /**
+     * The factory produces the subclasses that can be used meaning that should
+     * a new ship type be added, it only needs to be in one place, the factory.
+     * @param args
+     */
     public static void main(String[] args) {
         Factory f = new Factory();
         EnemyShip e = null;
