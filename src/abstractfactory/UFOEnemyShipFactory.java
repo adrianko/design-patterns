@@ -11,5 +11,5 @@ public class UFOEnemyShipFactory implements EnemyShipFactory {
     public ESEngine addESEngine() {
         return ESUFOEngine();
     }
-    
+
 }
