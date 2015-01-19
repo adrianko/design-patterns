@@ -21,6 +21,10 @@ public class Calculator {
         Numbers request = new Numbers(4, 2, "add");
 
         chainCalc1.calculate(request);
+        
+        Chain c = Add.build(Subtract.build(Multiply.build(new Divide())));
+        
+        c.calculate(new Numbers(4, 2, "div"));
     }
     
 }

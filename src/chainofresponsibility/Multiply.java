@@ -17,5 +17,12 @@ public class Multiply implements Chain {
             next.calculate(r);
         }
     }
+
+    public static Multiply build(Chain c) {
+        Multiply m = new Multiply();
+        m.setNext(c);
+        
+        return m;
+    }
     
 }

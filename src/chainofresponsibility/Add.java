@@ -18,4 +18,11 @@ public class Add implements Chain {
         }
     }
     
+    public static Add build(Chain c) {
+        Add a = new Add();
+        a.setNext(c);
+        
+        return a;
+    }
+    
 }

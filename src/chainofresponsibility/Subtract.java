@@ -17,5 +17,12 @@ public class Subtract implements Chain {
             next.calculate(r);
         }
     }
+
+    public static Subtract build(Chain c) {
+        Subtract s = new Subtract();
+        s.setNext(c);
+        
+        return s;
+    }
     
 }
