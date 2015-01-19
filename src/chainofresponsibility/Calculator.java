@@ -22,9 +22,10 @@ public class Calculator {
 
         chainCalc1.calculate(request);
         
-        Chain c = Add.build(Subtract.build(Multiply.build(new Divide())));
+        Chain c = Add.build(Subtract.build(Multiply.build(Divide.build(new Exponent()))));
         
         c.calculate(new Numbers(4, 2, "div"));
+        c.calculate(new Numbers(4, 2, "exp"));
     }
     
 }
