@@ -15,14 +15,14 @@ public class TaxVisitor implements Visitor {
 
     @Override
     public double visit(Tobacco tobaccoItem) {
-        System.out.println("Alcoholic Item: Price with VAT");
+        System.out.println("Tobacco Item: Price with VAT");
         
         return Double.parseDouble(df.format((tobaccoItem.getPrice() * .2) + tobaccoItem.getPrice()));
     }
 
     @Override
     public double visit(Necessity necessityItem) {
-        System.out.println("Alcoholic Item: Price with VAT");
+        System.out.println("Necessity Item: Price with VAT");
         
         return Double.parseDouble(df.format(necessityItem.getPrice()));
     }
