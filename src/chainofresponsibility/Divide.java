@@ -17,5 +17,12 @@ public class Divide implements Chain {
             System.out.println("Cannot parse expression");
         }
     }
+
+    public static Divide build(Chain c) {
+        Divide d = new Divide();
+        d.setNext(c);
+        
+        return d;
+    }
     
 }
