@@ -13,6 +13,8 @@ public class Divide implements Chain {
     public void calculate(Numbers r) {
         if (r.getCalculation().equals("div")) {
             System.out.println(r.getN1() + " / " + r.getN2() + " = " + (r.getN1() / r.getN2()));
+        } else if(next != null) {
+            next.calculate(r);
         } else {
             System.out.println("Cannot parse expression");
         }
