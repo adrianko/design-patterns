@@ -9,7 +9,11 @@ public class Customer {
      * @param args
      */
     public static void main(String[] args) {
+        BankAccount ba = new BankAccount(12345678, 1234);
         
+        ba.withdrawCash(100.00);
+        ba.depositCash(100.00);
+        ba.withdrawCash(1000.01);
     }
     
 }
