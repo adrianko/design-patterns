@@ -9,7 +9,18 @@ public class Calculator {
      * @param args
      */
     public static void main(String[] args) {
+        Chain chainCalc1 = new Add();
+        Chain chainCalc2 = new Subtract();
+        Chain chainCalc3 = new Multiply();
+        Chain chainCalc4 = new Divide();
+
+        chainCalc1.setNext(chainCalc2);
+        chainCalc2.setNext(chainCalc3);
+        chainCalc3.setNext(chainCalc4);
         
+        Numbers request = new Numbers(4, 2, "add");
+
+        chainCalc1.calculate(request);
     }
     
 }
