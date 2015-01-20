@@ -1,3 +1,5 @@
+package mvc;
+
 public class Model {
 
     private int result;

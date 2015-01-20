@@ -1,3 +1,5 @@
+package mvc;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -24,8 +26,8 @@ public class Controller {
 
                 m.add(p, q);
                 v.setCalcSolution(m.getResult());
-            } ctahc(NumberFormatException e) {
-                System.out.println(e);
+            } catch(NumberFormatException ex) {
+                System.out.println(ex);
                 v.displayErrorMessage("Need 2 int");
             }
         }
