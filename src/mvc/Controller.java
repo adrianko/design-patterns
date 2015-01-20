@@ -23,7 +23,7 @@ public class Controller {
                 q = v.getQ();
 
                 m.add(p, q);
-                v.setCalcSolution(m.getCalculationValue);
+                v.setCalcSolution(m.getResult());
             } ctahc(NumberFormatException e) {
                 System.out.println(e);
                 v.displayErrorMessage("Need 2 int");
