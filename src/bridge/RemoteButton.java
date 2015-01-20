@@ -15,5 +15,11 @@ public abstract class RemoteButton {
     public void buttonSixPressed() {
         ed.buttonSixPressed();
     }
+    
+    public void deviceFeedback() {
+        ed.deviceFeedback();
+    }
+    
+    public abstract void buttonNinePressed();
 
 }
