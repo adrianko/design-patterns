@@ -60,4 +60,19 @@ public class StockMediator implements Mediator {
         colleagueCodes++;
         c.setColleagueCode(colleagueCodes);
     }
+    
+    public void getStockOffering() {
+        System.out.println("Stocks for Sale");
+        
+        for (StockOffer o : stockSaleOffers) {
+            System.out.println(o.getShares() + " of " + o.getSymbol());
+        }
+
+        System.out.println("Stock Buy Offers");
+        
+        for (StockOffer o : stockBuyOffers) {
+            System.out.println(o.getShares() + " of "+ o.getSymbol());
+        }
+    }
+    
 }
