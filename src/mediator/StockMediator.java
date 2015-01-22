@@ -15,7 +15,7 @@ public class StockMediator implements Mediator {
         boolean stockSold = false;
         
         for (StockOffer o : stockBuyOffers) {
-            if (o.getSymbol().equals(stock) && (o.getShares() == shares)) {
+            if (o.getSymbol().equals(stock) && o.getShares() == shares) {
                 System.out.println(shares + " shares of " + stock + " sold to colleague code " + o.getColleagueCode());
                 stockBuyOffers.remove(o);
                 stockSold = true;
