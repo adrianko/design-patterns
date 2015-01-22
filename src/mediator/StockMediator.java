@@ -34,7 +34,24 @@ public class StockMediator implements Mediator {
 
     @Override
     public void buyOffer(String stock, int shares, int collCode) {
-
+        boolean stockBought = false;
+        
+        for (StockOffer o : stockSaleOffers) {
+            if (o.getSymbol().equals(stock) && o.getShares() == shares) {
+                System.out.println(shares + " shares of " + stock + " bought by colleague code " + o.getColleagueCode());
+                stockSaleOffers.remove(o);
+                stockBought = true;
+            }
+            
+            if (stockBought) {
+                break;
+            }
+        }
+        
+        if (!stockBought) {
+            System.out.println(shares + " shares of " + stock + " added to inventory");
+            stockBuyOffers.add(new StockOffer(shares, stock, collCode));
+        }
     }
 
     @Override
