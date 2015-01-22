@@ -16,7 +16,7 @@ public class StockOffer {
         return shares;
     }
     
-    public String tSymbol() {
+    public String getSymbol() {
         return symbol;
     }
     
