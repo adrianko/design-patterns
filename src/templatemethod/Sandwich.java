@@ -14,7 +14,7 @@ public abstract class Sandwich {
         }
 
         if (customerWantsCheese()) {
-            if (afterFirstCustomer) {
+            if (afterFirstCondiment) {
                 System.out.println("\n");
             }
             
@@ -45,5 +45,39 @@ public abstract class Sandwich {
         
         wrapSandwich();
     }
+    
+    abstract void addMeat();
+    abstract void addCheese();
+    abstract void addVegetables();
+    abstract void addCondiments();
+    
+    public void cutBun() {
+        System.out.println("The sandwich is cut");
+    }
+    
+    boolean customerWantsMeat() {
+        return true;
+    }
+    
+    boolean customerWantsCheese() {
+        return true;
+    }
+    
+    boolean customerWantsVegetables() {
+        return true;
+    }
+    
+    boolean customerWantsCondiments() {
+        return true;
+    }
+    
+    public void wrapSandwich() {
+        System.out.println("Wrap sandwich");
+    }
+    
+    public void afterFirstCondiment() {
+        System.out.println("\n");
+    }
+    
     
 }
