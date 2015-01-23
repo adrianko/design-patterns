@@ -14,30 +14,21 @@ public abstract class Sandwich {
         }
 
         if (customerWantsCheese()) {
-            if (afterFirstCondiment) {
-                System.out.println("\n");
-            }
-            
+            afterFirstCondiment();
             addCheese();
             
             afterFirstCondiment = true;
         }
         
         if (customerWantsVegetables()) {
-            if (afterFirstCondiment) {
-                System.out.println("\n");
-            }
-            
+            afterFirstCondiment();
             addVegetables();
             
             afterFirstCondiment = true;
         }
         
         if (customerWantsCondiments()) {
-            if (afterFirstCondiment) {
-                System.out.println("\n");
-            }
-            
+            afterFirstCondiment();
             addCondiments();
             
             afterFirstCondiment = true;
@@ -76,7 +67,9 @@ public abstract class Sandwich {
     }
     
     public void afterFirstCondiment() {
-        System.out.println("\n");
+        if (afterFirstCondiment) {
+            System.out.print("\n");
+        }
     }
 
     void addComponents(String comp, String[] comps) {
