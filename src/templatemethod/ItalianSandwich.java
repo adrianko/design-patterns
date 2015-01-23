@@ -27,12 +27,4 @@ public class ItalianSandwich extends Sandwich {
         addComponents("condiments", condimentsUsed);
     }
     
-    void addComponents(String comp, String[] comps) {
-        System.out.print("Adding " + comp + ": ");
-        
-        for (String c : comps) {
-            System.out.print(c + " ");
-        }
-    }
-    
 }

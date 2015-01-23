@@ -78,5 +78,13 @@ public abstract class Sandwich {
     public void afterFirstCondiment() {
         System.out.println("\n");
     }
+
+    void addComponents(String comp, String[] comps) {
+        System.out.print("Adding " + comp + ": ");
+
+        for (String c : comps) {
+            System.out.print(c + " ");
+        }
+    }
     
 }
