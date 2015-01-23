@@ -21,11 +21,11 @@ public class VeggieSandwich extends Sandwich {
 
     @Override
     void addVegetables() {
-
+        addComponents("vegetables", veggiesUsed);
     }
 
     @Override
     void addCondiments() {
-
+        addComponents("condiments", condimentsUsed);
     }
 }
