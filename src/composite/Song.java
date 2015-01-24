@@ -29,7 +29,7 @@ public class Song extends SongComponent {
     
     @Override
     public void displaySongInfo() {
-        System.out.println(getSongName() + " was recorded by  " + getArtist() + " in " + getReleaseYear());
+        System.out.println(getSongName() + " was recorded by " + getArtist() + " in " + getReleaseYear());
     }
     
 }
