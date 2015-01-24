@@ -4,16 +4,21 @@ public class Playlist {
     
     public static void main(String[] args) {
         SongComponent pop = new SongGroup("Pop", "Popular music");
+        SongComponent popRock = new SongGroup("Pop Rock", "Pop Rock music");
         SongComponent rock = new SongGroup("Rock", "Rock music");
-        SongComponent rap = new SongGroup("Rap", "Rap music");
         
         SongComponent allSongs = new SongGroup("Song List", "All");
-        
         allSongs.add(pop);
+        pop.add(new Song("Blank Space", "Taylor Swift", 2014));
+        
+        pop.add(popRock);
+        popRock.add(new Song("Sugar", "Maroon 5", 2014));
+        
         allSongs.add(rock);
-        allSongs.add(rap);
+        rock.add(new Song("Centuries", "Fall Out Boy", 2014));
         
-        
+        DJ ak = new DJ(allSongs);
+        ak.getSongList();
     }
     
 }
