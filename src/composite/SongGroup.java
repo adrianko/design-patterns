@@ -40,7 +40,6 @@ public class SongGroup extends SongComponent {
     @Override
     public void displaySongInfo() {
         System.out.println(getGroupName() + " " + getGroupDescription());
-        
         songComponents.forEach(SongComponent::displaySongInfo);
     }
     
