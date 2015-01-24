@@ -1,7 +1,11 @@
 package composite;
 
 public class Playlist {
-    
+
+    /**
+     * Composite - allows objects and compositions of objects to be treated uniformly
+     * @param args
+     */
     public static void main(String[] args) {
         SongComponent pop = new SongGroup("Pop", "Popular music");
         SongComponent popRock = new SongGroup("Pop Rock", "Pop Rock music");
