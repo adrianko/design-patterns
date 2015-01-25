@@ -5,7 +5,6 @@ import java.awt.*;
 public class Rectangle {
     
     private Color c = Color.black;
-    private int x, y, x2, y2;
     
     public Rectangle(Color cl) {
         c = cl;
