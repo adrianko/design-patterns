@@ -25,9 +25,7 @@ public class StockGrabber implements Subject {
 
     @Override
     public void notifyObserver() {
-        for (Observer o : observers) {
-            o.update(ibmPrice, aaplPrice, googPrice);
-        }
+        observers.stream().forEach(o -> o.update(ibmPrice, aaplPrice, googPrice));
     }
 
     public void setIBMPrice(double newIBMPrice) {
