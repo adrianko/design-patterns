@@ -31,22 +31,18 @@ public class Generator extends JFrame {
         startDrawing = new JButton("Button 1");
         contentPane.add(drawingPanel, BorderLayout.CENTER);
         contentPane.add(startDrawing, BorderLayout.SOUTH);
-        startDrawing.addActionListener(new ActionListener() {
-
-            public void actionPerformed(ActionEvent event) {
-                Graphics g = drawingPanel.getGraphics();
-                long startTime = System.currentTimeMillis();
-                
-                for (int i = 0; i < 100000; ++i) {
-                    Rectangle rect = RectangleFactory.getRectangle(getRandColor());
-                    rect.draw(g, getRandX(), getRandY(),
-                            getRandX(), getRandY());
-                }
-
-                long endTime = System.currentTimeMillis();
-                System.out.println("That took " + (endTime - startTime) + " milliseconds");
-            }
+        startDrawing.addActionListener(event -> {
+            Graphics g = drawingPanel.getGraphics();
+            long startTime = System.currentTimeMillis();
             
+            for (int i = 0; i < 100000; ++i) {
+                Rectangle rect = RectangleFactory.getRectangle(getRandColor());
+                rect.draw(g, getRandX(), getRandY(),
+                        getRandX(), getRandY());
+            }
+
+            long endTime = System.currentTimeMillis();
+            System.out.println("That took " + (endTime - startTime) + " milliseconds");
         });
 
         this.add(contentPane);
