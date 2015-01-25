@@ -8,7 +8,7 @@ public class RectangleFactory {
     private static final HashMap<Color, Rectangle> rectangles = new HashMap<>();
     
     public static Rectangle getRectangle(Color c) {
-        Rectangle r = (Rectangle) rectangles.get(c);
+        Rectangle r = rectangles.get(c);
         
         if (r == null) {
             r = new Rectangle(c);

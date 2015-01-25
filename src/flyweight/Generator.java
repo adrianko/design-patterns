@@ -37,8 +37,7 @@ public class Generator extends JFrame {
             
             for (int i = 0; i < 100000; ++i) {
                 Rectangle rect = RectangleFactory.getRectangle(getRandColor());
-                rect.draw(g, getRandX(), getRandY(),
-                        getRandX(), getRandY());
+                rect.draw(g, getRandX(), getRandY(), getRandX(), getRandY());
             }
 
             long endTime = System.currentTimeMillis();
