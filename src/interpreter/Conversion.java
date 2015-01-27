@@ -1,8 +1,6 @@
 package interpreter;
 
-import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
 
 public class Conversion {
 
@@ -22,7 +20,7 @@ public class Conversion {
                 c.getResponse() +
                 f.getMethod(to, new Class[]{Double.TYPE}).invoke(
                     f.getConstructor().newInstance(),
-                    new Object[]{new Double(quantity)}
+                    new Object[]{quantity}
                 ).toString() + 
                 " " + to
             );
