@@ -18,15 +18,15 @@ public class Conversion {
         
         try {
             Class f = Class.forName("interpreter." + from);
-            Constructor conF = f.getConstructor();
-            Object convertFrom = (Expression) conF.newInstance();
-            Class[] methodParams = new Class[]{Double.TYPE};
-            Method convMtd = f.getMethod(to, methodParams);
-            Object[] params = new Object[]{new Double(quantity)};
-            String toQuantity = (String) convMtd.invoke(convertFrom, params);
-            String ans = c.getResponse() + toQuantity + " " + to;
-            System.out.println(ans);
-        } catch(ClassNotFoundException | 
+            System.out.println(
+                c.getResponse() +
+                f.getMethod(to, new Class[]{Double.TYPE}).invoke(
+                    f.getConstructor().newInstance(),
+                    new Object[]{new Double(quantity)}
+                ).toString() + 
+                " " + to
+            );
+        } catch (ClassNotFoundException | 
                 NoSuchMethodException |
                 InvocationTargetException |
                 InstantiationException |
