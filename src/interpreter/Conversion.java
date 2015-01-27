@@ -11,13 +11,13 @@ public class Conversion {
      * @param args
      */
     public static void main(String[] args) {
-        Context c = new Context("25 tablespoons to gallons");
+        Context c = new Context("25 cups to gallons");
         String from = c.getFrom();
         String to = c.getTo();
         double quantity = c.getQuantity();
         
         try {
-            Class f = Class.forName(from);
+            Class f = Class.forName("interpreter." + from);
             Constructor conF = f.getConstructor();
             Object convertFrom = (Expression) conF.newInstance();
             Class[] methodParams = new Class[]{Double.TYPE};
@@ -25,6 +25,7 @@ public class Conversion {
             Object[] params = new Object[]{new Double(quantity)};
             String toQuantity = (String) convMtd.invoke(convertFrom, params);
             String ans = c.getResponse() + toQuantity + " " + to;
+            System.out.println(ans);
         } catch(ClassNotFoundException | 
                 NoSuchMethodException |
                 InvocationTargetException |
