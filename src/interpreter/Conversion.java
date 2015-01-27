@@ -15,7 +15,7 @@ public class Conversion {
         double quantity = c.getQuantity();
         
         try {
-            Class f = Class.forName("interpreter." + from);
+            Class<?> f = Class.forName("interpreter." + from);
             System.out.println(
                 c.getResponse() +
                 f.getMethod(to, new Class[]{Double.TYPE}).invoke(
