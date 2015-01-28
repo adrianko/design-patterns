@@ -14,11 +14,7 @@ public class NameRepository implements Container {
         
         @Override
         public boolean hasNext() {
-            if( i < names.length) {
-                return true;
-            }
-            
-            return false;
+            return i < names.length;
         }
         
         @Override
