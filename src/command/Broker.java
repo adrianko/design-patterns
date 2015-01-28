@@ -12,10 +12,7 @@ public class Broker {
     }
 
     public void placeOrders() {
-        for (Order o : orderList) {
-            o.execute();
-        }
-        
+        orderList.forEach(command.Order::execute);
         orderList.clear();
     }
     
