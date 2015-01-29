@@ -20,7 +20,7 @@ public class Person {
         return gender;
     }
 
-    public String getMartialStatus() {
+    public String getMaritalStatus() {
         return martialStatus;
     }
 
