@@ -9,7 +9,6 @@ public class CriteriaMale implements Criteria {
     public List<Person> meetCriteria(List<Person> persons) {
         List<Person> male = new ArrayList<>();
 
-
         persons.forEach( p -> {
             if (p.getGender().equalsIgnoreCase("MALE")) {
                 male.add(p);
