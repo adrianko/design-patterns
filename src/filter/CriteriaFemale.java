@@ -9,11 +9,11 @@ public class CriteriaFemale implements Criteria {
     public List<Person> meetCriteria(List<Person> persons) {
         List<Person> female = new ArrayList<>();
 
-        for (Person p : persons) {
+        persons.forEach( p -> {
             if (p.getGender().equalsIgnoreCase("FEMALE")) {
                 female.add(p);
             }
-        }
+        });
 
         return female;
     }
