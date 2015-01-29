@@ -23,5 +23,5 @@ public class Person {
     public String getMartialStatus() {
         return martialStatus;
     }
-    
+
 }
