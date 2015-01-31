@@ -9,4 +9,11 @@ public class Multiton {
 
     private Multiton() {}
 
+    public static Multiton getInstance(String key) {
+        if (!instances.contains(key)) {
+            instances.put(key, new Multiton());
+        }
+        return instances.get(key);
+    }
+
 }
