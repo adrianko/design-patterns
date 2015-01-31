@@ -16,4 +16,10 @@ public class Multiton {
         return instances.get(key);
     }
 
+    public static void destroyInstance(String key) {
+        if (instances.contains(key)) {
+            instances.remove(key);
+        }
+    }
+
 }
