@@ -7,4 +7,6 @@ public class Multiton {
 
     private static Map<String, Multiton> instances = new HashMap<>();
 
+    private Multiton() {}
+
 }
