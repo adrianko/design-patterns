@@ -6,7 +6,7 @@ public class CheckPlayerState {
         Context c = new Context();
 
         StartState start = new StartState();
-        start.doAction(context);
+        start.doAction(c);
         System.out.println(c.getState().toString());
     }
 
