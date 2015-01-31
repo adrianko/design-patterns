@@ -2,6 +2,12 @@ package state;
 
 public class CheckPlayerState {
 
+    /**
+     * State - class behaviour changes based on its state. Different objects
+     * represent different states and a context object whose behaviour varies
+     * as its state object changes.
+     * @param args
+     */
     public static void main(String[] args) {
         Context c = new Context();
 
