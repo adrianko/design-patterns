@@ -1,9 +1,10 @@
 package multiton;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class Multiton {
 
-    private Map<String, Multiton> instances = new HashMap<>();
+    private static Map<String, Multiton> instances = new HashMap<>();
 
 }
