@@ -6,6 +6,7 @@ public class Run {
      * Multiton - an extension of the Singleton pattern that keeps
      * instances of the singleton in a map referred to by a key,
      * therefore producing a multiton.
+     * One object per key rather than one object per application.
      * @param args
      */
     public static void main(String[] args) {
