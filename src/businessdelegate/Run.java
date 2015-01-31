@@ -8,6 +8,9 @@ public class Run {
 
         Client c = new Client(bd);
         c.doTask();
+
+        bd.setServiceType("JMS");
+        c.doTask();
     }
 
 }
