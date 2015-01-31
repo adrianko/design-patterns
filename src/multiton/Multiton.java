@@ -10,14 +10,14 @@ public class Multiton {
     private Multiton() {}
 
     public static Multiton getInstance(String key) {
-        if (!instances.contains(key)) {
+        if (!instances.containsKey(key)) {
             instances.put(key, new Multiton());
         }
         return instances.get(key);
     }
 
     public static void destroyInstance(String key) {
-        if (instances.contains(key)) {
+        if (instances.containsKey(key)) {
             instances.remove(key);
         }
     }
