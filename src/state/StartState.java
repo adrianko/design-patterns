@@ -8,6 +8,7 @@ public class StartState implements State {
         c.setState(this);
     }
 
+    @Override
     public String toString() {
         return "Start state";
     }
