@@ -14,4 +14,12 @@ public class Client {
         ce.setData(d1, d2);
     }
 
+    public static void main(String[] args) {
+        Client c = new Client();
+        c.setData("Hello", "World");
+        c.printData();
+        c.setData("Again", "And Again");
+        c.printData();
+    }
+
 }
