@@ -14,6 +14,13 @@ public class Client {
         ce.setData(d1, d2);
     }
 
+    /**
+     * Composite Entity is used in the EJB persistance mechanism. A composite
+     * entity is an EJB entity bean which represents a graph of objects. When a
+     * composite entity is updated, internally dependent objects get updated
+     * automatically as being managed by the EJB entity bean.
+     * @param args
+     */
     public static void main(String[] args) {
         Client c = new Client();
         c.setData("Hello", "World");
