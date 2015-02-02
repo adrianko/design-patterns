@@ -8,6 +8,11 @@ public class DAO {
         for (Student s : dao.getAllStudents()) {
             System.out.println("Student: [RollNo : " + s.getRollNo() + ", Name : " + s.getName() + " ]");
         }
+
+        //update student
+        Student student = dao.getAllStudents().get(0);
+        student.setName("Michael");
+        dao.updateStudent(student);
     }
 
 }
