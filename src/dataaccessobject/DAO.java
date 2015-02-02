@@ -13,6 +13,10 @@ public class DAO {
         Student student = dao.getAllStudents().get(0);
         student.setName("Michael");
         dao.updateStudent(student);
+        
+        //get the student
+        dao.getStudent(0);
+        System.out.println("Student: [RollNo : " + student.getRollNo() + ", Name : " + student.getName() + " ]");
     }
 
 }
