@@ -13,5 +13,9 @@ public class FrontController {
 
         return true;
     }
-    
+
+    private void trackRequest(String request) {
+        System.out.println("Page requested: " + request);
+    }
+
 }
