@@ -18,4 +18,12 @@ public class FrontController {
         System.out.println("Page requested: " + request);
     }
 
+    public void dispatchRequest(String request) {
+        trackRequest(request);
+
+        if (isAuthenticUser()) {
+            dispatcher.dispatch(request);
+        }
+    }
+
 }
