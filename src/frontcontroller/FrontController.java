@@ -7,5 +7,11 @@ public class FrontController {
     public FrontController() {
         dispatcher = new Dispatcher();
     }
+
+    private boolean isAuthenticUser() {
+        System.out.println("Auth'ed");
+
+        return true;
+    }
     
 }
