@@ -9,4 +9,12 @@ public class FilterManager {
         filterChain.setTarget(t);
     }
     
+    public void setFilter(Filter f) {
+        filterChain.addFilter(f);
+    }
+    
+    public void filterRequest(String r) {
+        filterChain.execute(r);
+    }
+    
 }
