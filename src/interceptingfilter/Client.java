@@ -8,4 +8,8 @@ public class Client {
         filterManager = fm;    
     }
     
+    public void sendRequest(String r) {
+        filterManager.filterRequest(r);
+    }
+    
 }
