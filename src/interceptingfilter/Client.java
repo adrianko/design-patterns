@@ -17,6 +17,9 @@ public class Client {
         fm.setFilter(new AuthenticationFilter());
         fm.setFilter(new DebugFilter());
         
+        Client c = new Client();
+        c.setFilterManager(fm);
+        c.sendRequest("HOME");
     }
     
 }
