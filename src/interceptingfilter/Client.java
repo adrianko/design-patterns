@@ -13,6 +13,9 @@ public class Client {
     }
     
     public static void main(String[] args) {
+        FilterManager fm = new FilterManager(new Target());
+        fm.setFilter(new AuthenticationFilter());
+        fm.setFilter(new DebugFilter());
         
     }
     
