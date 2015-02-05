@@ -12,4 +12,8 @@ public class Client {
         filterManager.filterRequest(r);
     }
     
+    public static void main(String[] args) {
+        
+    }
+    
 }
