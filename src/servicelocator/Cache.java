@@ -24,4 +24,18 @@ public class Cache {
         return null;
     }
 
+    public void addService(Service service) {
+        boolean exists = false;
+
+        for (Service s : services) {
+            if (s.getName().equals(service.getName())) {
+                exists = true;
+            }
+        }
+
+        if (!exists) {
+            services.add(service);
+        }
+    }
+
 }
