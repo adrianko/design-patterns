@@ -21,6 +21,12 @@ public class ServiceLocator {
         return s1;
     }
 
+    /**
+     * Service Locator - used when services are to be located using JNDI lookup. Makes use of caching technique since
+     * there is a high cost looking up JNDI for a service. The first time a service is required, Service Locator looks
+     * up JNDI and caches the service object.
+     * @param args
+     */
     public static void main(String[] args) {
         Service s = ServiceLocator.getService("ServiceOne");
         s.execute();
