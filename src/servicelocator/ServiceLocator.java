@@ -21,4 +21,18 @@ public class ServiceLocator {
         return s1;
     }
 
+    public static void main(String[] args) {
+        Service s = ServiceLocator.getService("ServiceOne");
+        s.execute();
+
+        s = ServiceLocator.getService("ServiceTwo");
+        s.execute();
+
+        s = ServiceLocator.getService("ServiceOne");
+        s.execute();
+
+        s = ServiceLocator.getService("ServiceTwo");
+        s.execute();
+    }
+
 }
