@@ -1,4 +1,4 @@
-package factory;
+package factory.ufo;
 
 public abstract class EnemyShip {
 

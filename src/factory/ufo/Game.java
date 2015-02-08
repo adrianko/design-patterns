@@ -1,4 +1,4 @@
-package factory;
+package factory.ufo;
 
 import java.util.Scanner;
 

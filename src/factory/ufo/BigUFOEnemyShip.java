@@ -1,4 +1,4 @@
-package factory;
+package factory.ufo;
 
 public class BigUFOEnemyShip extends UFOEnemyShip {
 
