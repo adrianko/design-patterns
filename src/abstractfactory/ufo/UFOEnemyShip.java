@@ -1,10 +1,10 @@
-package abstractfactory;
+package abstractfactory.ufo;
 
-public class UFOBossEnemyShip extends EnemyShip {
+public class UFOEnemyShip extends EnemyShip {
 
     EnemyShipFactory shipFactory;
 
-    public UFOBossEnemyShip(EnemyShipFactory sf) {
+    public UFOEnemyShip(EnemyShipFactory sf) {
         shipFactory = sf;
     }
 
