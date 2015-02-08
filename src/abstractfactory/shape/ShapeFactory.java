@@ -16,7 +16,7 @@ public class ShapeFactory extends AbstractFactory {
         } else if (shape.equalsIgnoreCase("SQUARE")) {
             return new Square();
         }
-        
+
         return null;
     }
 
