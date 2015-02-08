@@ -22,6 +22,9 @@ public class ShapeFactory {
 
         Shape s2 = sf.getShape("RECTANGLE");
         s2.draw();
+
+        Shape s3 = sf.getShape("SQUARE");
+        s3.draw();
     }
 
 }
