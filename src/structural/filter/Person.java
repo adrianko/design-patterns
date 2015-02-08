@@ -1,4 +1,4 @@
-package filter;
+package structural.filter;
 
 public class Person {
 

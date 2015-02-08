@@ -1,4 +1,4 @@
-package filter;
+package structural.filter;
 
 import java.util.List;
 
