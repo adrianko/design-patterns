@@ -1,4 +1,4 @@
-package creational.singleton;
+package creational.singleton.scrabble;
 
 import java.util.Arrays;
 import java.util.LinkedList;
