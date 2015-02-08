@@ -14,6 +14,12 @@ public class ShapeFactory {
         return null;
     }
 
+    /**
+     * Factory pattern - creational
+     * An object is created on request without exposing the creation logic to the client and reference to the newly
+     * created object is done using a common interface.
+     * @param args
+     */
     public static void main(String[] args) {
         ShapeFactory sf = new ShapeFactory();
 
