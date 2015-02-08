@@ -1,4 +1,4 @@
-package mvc;
+package enterprise.mvc;
 
 public class Model {
 
