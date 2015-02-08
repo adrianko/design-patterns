@@ -1,4 +1,4 @@
-package factory.shape;
+package abstractfactory.shape;
 
 public class Circle implements Shape {
 
