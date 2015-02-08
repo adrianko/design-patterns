@@ -25,6 +25,9 @@ public class ShapeFactory {
 
         Shape s3 = sf.getShape("SQUARE");
         s3.draw();
+
+        Shape s4 = sf.getShape("OVAL");
+        s4.draw();
     }
 
 }
