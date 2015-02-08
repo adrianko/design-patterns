@@ -10,8 +10,15 @@ public class ShapeFactory {
         } else if (shape.equalsIgnoreCase("SQUARE")) {
             return new Square();
         }
-        
+
         return null;
+    }
+
+    public static void main(String[] args) {
+        ShapeFactory sf = new ShapeFactory();
+
+        Shape s1 = sf.getShape("CIRCLE");
+        s1.draw();
     }
 
 }
