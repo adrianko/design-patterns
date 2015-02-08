@@ -15,9 +15,9 @@ public class Client {
     }
 
     /**
-     * Composite Entity is used in the EJB persistance mechanism. A composite
+     * Composite Entity is used in the EJB persistance mechanism. A structural.composite
      * entity is an EJB entity bean which represents a graph of objects. When a
-     * composite entity is updated, internally dependent objects get updated
+     * structural.composite entity is updated, internally dependent objects get updated
      * automatically as being managed by the EJB entity bean.
      * @param args
      */
