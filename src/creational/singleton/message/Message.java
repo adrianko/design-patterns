@@ -9,8 +9,14 @@ public class Message {
      */
     public static void main(String[] args) {
         //Singleton s = new Singleton();
-        Singleton s = Singleton.getInstance();
-        s.showMessage();
+        Singleton s1 = Singleton.getInstance();
+        s1.showMessage();
+
+        Singleton s2 = Singleton.getInstance();
+        s2.showMessage();
+
+        System.out.println("S1 HashCode: " + s1.hashCode());
+        System.out.println("S2 HashCode: " + s2.hashCode());
     }
 
 }
