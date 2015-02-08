@@ -12,4 +12,8 @@ public class FactoryProducer {
         return null;
     }
 
+    public static void main(String[] args) {
+        
+    }
+
 }
