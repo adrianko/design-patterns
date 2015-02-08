@@ -19,6 +19,9 @@ public class ShapeFactory {
 
         Shape s1 = sf.getShape("CIRCLE");
         s1.draw();
+
+        Shape s2 = sf.getShape("RECTANGLE");
+        s2.draw();
     }
 
 }
