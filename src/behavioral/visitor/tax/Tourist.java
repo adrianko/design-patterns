@@ -1,4 +1,4 @@
-package behavioral.visitor;
+package behavioral.visitor.tax;
 
 public class Tourist {
 

@@ -1,4 +1,4 @@
-package behavioral.visitor;
+package behavioral.visitor.tax;
 
 import java.text.DecimalFormat;
 

@@ -1,19 +1,19 @@
-package behavioral.visitor;
+package behavioral.visitor.tax;
 
-public class Tobacco implements Visitable {
-
+public class Alcohol implements Visitable {
+    
     private double price;
-
-    Tobacco(double item) {
+    
+    Alcohol(double item) {
         price = item;
     }
-
+    
     public double accept(Visitor v) {
         return v.visit(this);
     }
-
+    
     public double getPrice() {
         return price;
     }
-
+    
 }
