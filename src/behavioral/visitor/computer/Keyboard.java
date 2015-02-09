@@ -3,8 +3,8 @@ package behavioral.visitor.computer;
 public class Keyboard implements ComputerComponent {
     
     @Override
-    public void accept(ComputerPartVisitor computerPartVisitor) {
-        computerPartVisitor.visit(this);
+    public void accept(ComputerPastVisitor computerPastVisitor) {
+        computerPastVisitor.visit(this);
     }
     
 }

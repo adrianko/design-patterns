@@ -9,7 +9,7 @@ public class Computer implements ComputerComponent {
     }
     
     @Override
-    public void accept(ComputerPartVisitor computerPartVisitor) {
+    public void accept(ComputerPastVisitor computerPartVisitor) {
         for (int i = 0; i < parts.length; i++)  {
             parts[i].accept(computerPartVisitor);
         }
