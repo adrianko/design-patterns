@@ -26,6 +26,10 @@ public class ShapeCache {
         shapeMap.put(r.getID(), r);
     }
 
+    /**
+     * Prototype - creating duplicate object while keeping performance in mind. Used when creation of object is costly.
+     * @param args
+     */
     public static void main(String[] args) {
         ShapeCache.loadCache();
 
