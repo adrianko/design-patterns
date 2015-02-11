@@ -20,7 +20,11 @@ public class ShapeFactory {
     }
     
     public static void main(String[] args) {
-        
+        Circle c = (Circle) ShapeFactory.getCircle("red");
+        c.setX(10);
+        c.setY(10);
+        c.setRadius(100);
+        c.draw();
     }
     
 }
