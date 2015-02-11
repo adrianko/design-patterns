@@ -20,6 +20,10 @@ public class ShapeCache {
         Square s = new Square();
         s.setID("2");
         shapeMap.put(s.getID(), s);
+
+        Rectangle r = new Rectangle();
+        r.setID("3");
+        shapeMap.put(r.getID(), r);
     }
 
 }
