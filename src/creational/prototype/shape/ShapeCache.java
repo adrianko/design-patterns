@@ -12,4 +12,10 @@ public class ShapeCache {
         return (Shape) cachedShape.clone();
     }
 
+    public static void loadCache() {
+        Circle c = new Circle();
+        c.setID("1");
+        shapeMap.put(c.getID(), c);
+    }
+
 }
