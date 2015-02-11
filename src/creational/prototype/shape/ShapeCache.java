@@ -26,4 +26,8 @@ public class ShapeCache {
         shapeMap.put(r.getID(), r);
     }
 
+    public static void main(String[] args) {
+
+    }
+
 }
