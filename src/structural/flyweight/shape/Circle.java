@@ -11,6 +11,10 @@ public class Circle implements Shape {
         colour = c;
     }
     
+    public void setX(int x) {
+        this.x = x;
+    }
+    
     @Override
     public void draw() {
         
