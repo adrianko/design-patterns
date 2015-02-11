@@ -7,6 +7,10 @@ public class Circle implements Shape {
     private int y;
     private int radius;
     
+    public Circle(String c) {
+        colour = c;
+    }
+    
     @Override
     public void draw() {
         
