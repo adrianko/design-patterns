@@ -20,7 +20,8 @@ public class ShapeFactory {
     }
     
     public static void main(String[] args) {
-        Circle c = (Circle) ShapeFactory.getCircle("red");
+        String[] colours = {"Red", "Green", "Blue", "White", "Black"};
+        Circle c = (Circle) ShapeFactory.getCircle(colours[(int)(Math.random() * colours.length)]);
         c.setX(10);
         c.setY(10);
         c.setRadius(100);
