@@ -16,6 +16,10 @@ public class ShapeCache {
         Circle c = new Circle();
         c.setID("1");
         shapeMap.put(c.getID(), c);
+
+        Square s = new Square();
+        s.setID("2");
+        shapeMap.put(s.getID(), s);
     }
 
 }
