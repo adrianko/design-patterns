@@ -1,4 +1,4 @@
-package creational.prototype;
+package creational.prototype.animal;
 
 public interface Animal extends Cloneable {
 
