@@ -22,8 +22,8 @@ public class ShapeFactory {
     public static void main(String[] args) {
         String[] colours = {"Red", "Green", "Blue", "White", "Black"};
         Circle c = (Circle) ShapeFactory.getCircle(colours[(int)(Math.random() * colours.length)]);
-        c.setX((int) Math.random() * 100);
-        c.setY(10);
+        c.setX((int) (Math.random() * 100));
+        c.setY((int) (Math.random() * 100));
         c.setRadius(100);
         c.draw();
     }
