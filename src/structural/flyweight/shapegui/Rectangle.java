@@ -1,4 +1,4 @@
-package structural.flyweight;
+package structural.flyweight.shapegui;
 
 import java.awt.*;
 
