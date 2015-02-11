@@ -23,7 +23,13 @@ public class ShapeMaker {
     public void drawSquare() {
         square.draw();
     }
-    
+
+    /**
+     * Facade - hides complexities of the system and provides an interface to the client using which the client can
+     * access the system. Single class provides simplified methods required by client and delegates calls to methods
+     * of existing system classes.
+     * @param args
+     */
     public static void main(String[] args) {
         ShapeMaker sm = new ShapeMaker();
         sm.drawCircle();
