@@ -24,4 +24,8 @@ public class ShapeMaker {
         square.draw();
     }
     
+    public static void main(String[] args) {
+        
+    }
+    
 }
