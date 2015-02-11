@@ -19,6 +19,10 @@ public class Circle implements Shape {
         this.y = y;
     }
     
+    public void setRadius(int r) {
+        radius = r;
+    }
+    
     @Override
     public void draw() {
         
