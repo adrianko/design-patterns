@@ -1,4 +1,4 @@
 package creational.prototype.shape;
 
-public class Shape {
+public abstract class Shape implements Cloneable {
 }
