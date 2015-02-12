@@ -1,7 +1,12 @@
 package structural.composite.employee;
 
 public class HR {
-    
+
+    /**
+     * Composite - to treat a group of objects in a similar way as a single object. Composes objects in terms of a tree
+     * structure to represent part as well as whole hierarchy
+     * @param args
+     */
     public static void main(String[] args) {
         Employee ceo = new Employee("John", "CEO", 30000);
         Employee headSales = new Employee("Robert", "Head of Sales", 20000);
