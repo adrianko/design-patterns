@@ -1,5 +1,6 @@
 package structural.composite.employee;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Employee {
@@ -8,5 +9,12 @@ public class Employee {
     private String dept;
     private int salary;
     private List<Employee> subordinates;
+    
+    public Employee(String n, String d, int s) {
+        name = n;
+        dept = d;
+        salary = s;
+        subordinates = new ArrayList<>();
+    }
     
 }
