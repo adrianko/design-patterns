@@ -12,6 +12,9 @@ public class HR {
 
         Employee salesExecutive1 = new Employee("Richard", "Sales", 10000);
         Employee salesExecutive2 = new Employee("Rob", "Sales", 10000);
+        
+        ceo.add(headSales);
+        ceo.add(headMkt);
     }
     
 }
