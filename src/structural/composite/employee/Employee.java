@@ -21,4 +21,8 @@ public class Employee {
         subordinates.add(e);
     }
     
+    public void remove(Employee e) {
+        subordinates.remove(e);
+    }
+    
 }
