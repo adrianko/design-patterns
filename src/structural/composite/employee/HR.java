@@ -21,6 +21,16 @@ public class HR {
         
         headMkt.add(clerk1);
         headMkt.add(clerk2);
+
+        System.out.println(ceo);
+        
+        for (Employee headEmployee : ceo.getSubordinates()) {
+            System.out.println(headEmployee);
+            
+            for (Employee e : headEmployee.getSubordinates()) {
+                System.out.println(e);
+            }
+        }
     }
     
 }
