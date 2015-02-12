@@ -27,9 +27,7 @@ public class HR {
         for (Employee headEmployee : ceo.getSubordinates()) {
             System.out.println(headEmployee);
             
-            for (Employee e : headEmployee.getSubordinates()) {
-                System.out.println(e);
-            }
+            headEmployee.getSubordinates().forEach(System.out::println);
         }
     }
     
