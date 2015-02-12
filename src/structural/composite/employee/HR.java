@@ -18,6 +18,9 @@ public class HR {
         
         headSales.add(salesExecutive1);
         headSales.add(salesExecutive2);
+        
+        headMkt.add(clerk1);
+        headMkt.add(clerk2);
     }
     
 }
