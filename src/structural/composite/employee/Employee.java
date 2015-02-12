@@ -17,4 +17,8 @@ public class Employee {
         subordinates = new ArrayList<>();
     }
     
+    public void add(Employee e) {
+        subordinates.add(e);
+    }
+    
 }
