@@ -10,7 +10,7 @@ public class HR {
     public static void main(String[] args) {
         Employee ceo = new Employee("John", "CEO", 30000);
         Employee headSales = new Employee("Robert", "Head of Sales", 20000);
-        Employee headMkt = new Employee("Michael", "Head or Marketing", 20000);
+        Employee headMkt = new Employee("Michael", "Head of Marketing", 20000);
 
         Employee clerk1 = new Employee("Laura", "Marketing", 10000);
         Employee clerk2 = new Employee("Bob", "Marketing", 10000);
