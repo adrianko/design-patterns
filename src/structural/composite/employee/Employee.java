@@ -25,4 +25,8 @@ public class Employee {
         subordinates.remove(e);
     }
     
+    public List<Employee> getSubordinates() {
+        return subordinates;
+    }
+    
 }
