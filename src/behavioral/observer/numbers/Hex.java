@@ -1,6 +1,11 @@
 package behavioral.observer.numbers;
 
 public class Hex extends Observer {
+    
+    public Hex(Subject s) {
+        subject = s;
+        subject.attach(this);
+    }
 
     @Override
     public void update() {
