@@ -12,4 +12,8 @@ public class Subject {
         return state;
     }
     
+    public void setState(int s) {
+        state = s;
+    }
+    
 }
