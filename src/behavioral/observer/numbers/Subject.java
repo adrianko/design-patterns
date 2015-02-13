@@ -21,7 +21,7 @@ public class Subject {
     }
     
     public void notifyObservers() {
-        observers.forEach(o -> o.update());
+        observers.forEach(Observer::update);
     }
     
 }
