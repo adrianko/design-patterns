@@ -20,4 +20,8 @@ public class Subject {
         observers.add(o);
     }
     
+    public void notifyObservers() {
+        observers.forEach(o -> o.update());
+    }
+    
 }
