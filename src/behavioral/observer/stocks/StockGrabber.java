@@ -1,4 +1,4 @@
-package behavioral.observer;
+package behavioral.observer.stocks;
 
 import java.util.ArrayList;
 
