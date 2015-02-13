@@ -14,6 +14,7 @@ public class Subject {
     
     public void setState(int s) {
         state = s;
+        notifyObservers();
     }
     
     public void attach(Observer o) {
