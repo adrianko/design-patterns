@@ -16,4 +16,8 @@ public class Subject {
         state = s;
     }
     
+    public void attach(Observer o) {
+        observers.add(o);
+    }
+    
 }
