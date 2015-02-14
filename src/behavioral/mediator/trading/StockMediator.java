@@ -1,4 +1,4 @@
-package behavioral.mediator;
+package behavioral.mediator.trading;
 
 import java.util.ArrayList;
 

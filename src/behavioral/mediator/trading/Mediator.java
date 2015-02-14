@@ -1,4 +1,4 @@
-package behavioral.mediator;
+package behavioral.mediator.trading;
 
 public interface Mediator {
     
