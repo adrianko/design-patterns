@@ -8,4 +8,8 @@ public class User {
         return name;
     }
 
+    public void setName(String n) {
+        name = n;
+    }
+
 }
