@@ -10,4 +10,8 @@ public abstract class AbstractLogger {
 
     protected AbstractLogger next;
 
+    public void setNext(AbstractLogger nl) {
+        next = nl;
+    }
+
 }
