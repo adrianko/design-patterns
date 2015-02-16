@@ -1,4 +1,4 @@
-package behavioral.chainofresponsibility;
+package behavioral.chainofresponsibility.conversion;
 
 public class Exponent implements Chain {
 
