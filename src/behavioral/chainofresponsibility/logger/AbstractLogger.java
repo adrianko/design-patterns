@@ -14,4 +14,8 @@ public abstract class AbstractLogger {
         next = nl;
     }
 
+    public void logMessage(int level, String message) {
+        next.logMessage(level, message);
+    }
+
 }
