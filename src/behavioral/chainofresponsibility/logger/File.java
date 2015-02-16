@@ -10,4 +10,5 @@ public class File extends AbstractLogger {
     protected void write(String message) {
         System.out.println("File::Logger: " + message);
     }
+
 }
