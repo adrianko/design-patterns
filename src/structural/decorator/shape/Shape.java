@@ -1,4 +1,4 @@
-package behavioral.strategy.shape;
+package structural.decorator.shape;
 
 public interface Shape {
     

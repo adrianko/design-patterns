@@ -1,4 +1,4 @@
-package behavioral.strategy.shape;
+package structural.decorator.shape;
 
 public class Rectangle implements Shape {
     

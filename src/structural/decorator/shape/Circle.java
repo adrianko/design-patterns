@@ -1,4 +1,4 @@
-package behavioral.strategy.shape;
+package structural.decorator.shape;
 
 public class Circle implements Shape {
     
