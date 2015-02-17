@@ -1,4 +1,4 @@
-package structural.decorator;
+package structural.decorator.pizza;
 
 public class Pizzaria {
 

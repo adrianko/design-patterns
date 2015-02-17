@@ -1,4 +1,4 @@
-package structural.decorator;
+package structural.decorator.pizza;
 
 public abstract class ToppingDecorator implements Pizza {
 
