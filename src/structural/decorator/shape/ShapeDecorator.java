@@ -1,4 +1,4 @@
 package structural.decorator.shape;
 
-public class ShapeDecorator {
+public abstract class ShapeDecorator {
 }
