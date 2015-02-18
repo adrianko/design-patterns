@@ -8,4 +8,8 @@ public class Context {
         strategy = s;
     }
 
+    public int executeStrategy(int n1, int n2) {
+        return strategy.doOperation(n1, n2);
+    }
+
 }
