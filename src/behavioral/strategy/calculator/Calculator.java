@@ -8,6 +8,9 @@ public class Calculator {
 
         Context c2 = new Context(new OperationSubtract());
         System.out.println("10 - 5 = " + c2.executeStrategy(10, 5));
+
+        Context c3 = new Context(new OperationMultiply());
+        System.out.println("10 * 5 = " + c3.executeStrategy(10, 5));
     }
 
 }
