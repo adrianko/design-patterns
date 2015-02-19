@@ -1,4 +1,4 @@
-package behavioral.interpreter;
+package behavioral.interpreter.conversion;
 
 import java.lang.reflect.InvocationTargetException;
 

@@ -1,30 +1,30 @@
-package behavioral.interpreter;
+package behavioral.interpreter.conversion;
 
-public class Quarts extends Expression {
+public class Cups extends Expression {
     
     @Override
     public String gallons(double quantity) {
-        return Double.toString(quantity / 4);
+        return Double.toString(quantity / 16);
     }
 
     @Override
     public String quarts(double quantity) {
-        return Double.toString(quantity);
+        return Double.toString(quantity / 4);
     }
 
     @Override
     public String pints(double quantity) {
-        return Double.toString(quantity * 2);
+        return Double.toString(quantity / 2);
     }
 
     @Override
     public String cups(double quantity) {
-        return Double.toString(quantity * 4);
+        return Double.toString(quantity);
     }
 
     @Override
     public String tablespoon(double quantity) {
-        return Double.toString(quantity * 64);
+        return Double.toString(quantity * 16);
     }
 
 }
