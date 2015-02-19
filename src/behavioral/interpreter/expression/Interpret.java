@@ -16,6 +16,11 @@ public class Interpret {
         return new AndExpression(julie, married);
     }
 
+    /**
+     * Interpreter - provides a way to evaluate language grammar or expression. Involves implementing an expression interface
+     * which tells to interpret a particular context.
+     * @param args
+     */
     public static void main(String[] args) {
         Expression isMale = getMaleExpression();
         Expression isMarriedWoman = getMarriedWomanExpression();
