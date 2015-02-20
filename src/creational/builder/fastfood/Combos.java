@@ -10,4 +10,12 @@ public class Combos {
         return m;
     }
     
+    public Meal prepareNonVegMeal() {
+        Meal m = new Meal();
+        m.addItem(new ChickenBurger());
+        m.addItem(new Fanta());
+        
+        return m;
+    }
+    
 }
