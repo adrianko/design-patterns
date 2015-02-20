@@ -21,4 +21,12 @@ public class Meal {
         return cost;
     }
     
+    public void showItems() {
+        for (Item it : items) {
+            System.out.print("Item: " + it.name());
+            System.out.print(", Packing: " + it.packing().pack());
+            System.out.println(", Price: " + it.price());
+        }
+    }
+    
 }
