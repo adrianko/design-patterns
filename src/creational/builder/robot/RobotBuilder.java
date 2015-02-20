@@ -1,4 +1,4 @@
-package creational.builder;
+package creational.builder.robot;
 
 public interface RobotBuilder {
     
