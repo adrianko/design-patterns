@@ -11,4 +11,14 @@ public class Meal {
         items.add(it);
     }
     
+    public float getCost() {
+        float cost = 0.0f;
+        
+        for (Item it : items) {
+            cost += it.price();
+        }
+        
+        return cost;
+    }
+    
 }
