@@ -8,6 +8,11 @@ public class Sell {
         System.out.println("Veg Meal");
         vegMeal.showItems();
         System.out.println("Total Cost: " + vegMeal.getCost());
+        
+        Meal nonVegMeal = c.prepareNonVegMeal();
+        System.out.println("\nNon Veg Meal");
+        nonVegMeal.showItems();
+        System.out.println("Total Cost: " + nonVegMeal.getCost());
     }
     
 }
