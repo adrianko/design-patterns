@@ -6,6 +6,8 @@ public class Player {
         AudioPlayer ap = new AudioPlayer();
         
         ap.play("mp3", "Secrets.mp3");
+        ap.play("mp4", "TV Show.mp4");
+        
     }
     
 }
