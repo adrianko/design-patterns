@@ -8,6 +8,7 @@ public class Player {
         ap.play("mp3", "Secrets.mp3");
         ap.play("mp4", "TV Show.mp4");
         ap.play("vlc", "Film.vlc");
+        ap.play("avi", "video.avi");
     }
     
 }
