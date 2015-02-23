@@ -1,7 +1,12 @@
 package structural.adapter.mediaplayer;
 
 public class Player {
-    
+
+    /**
+     * Adapter - works as a bridge between two incompatible interfaces. Involves a single class which is responsible for
+     * joining the functionalities of independent or incompatible interfaces.
+     * @param args
+     */
     public static void main(String[] args) {
         AudioPlayer ap = new AudioPlayer();
         
