@@ -1,4 +1,4 @@
-package structural.adapter;
+package structural.adapter.robot;
 
 import java.util.Random;
 
