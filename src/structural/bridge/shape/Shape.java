@@ -7,5 +7,7 @@ public abstract class Shape {
     protected Shape(DrawAPI d) {
         drawAPI = d;
     } 
+    
+    public abstract void draw();
 
 }
