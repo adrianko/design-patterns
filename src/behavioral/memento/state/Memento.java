@@ -8,4 +8,8 @@ public class Memento {
         state = s;
     }
     
+    public String getState() {
+        return state;
+    }
+    
 }
