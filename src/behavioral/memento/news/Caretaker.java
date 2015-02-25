@@ -1,4 +1,4 @@
-package behavioral.memento;
+package behavioral.memento.news;
 
 import java.util.ArrayList;
 
