@@ -12,4 +12,12 @@ public class Originator {
         return state;
     }
     
+    public Memento saveState() {
+        return new Memento(state);
+    }
+    
+    public void getState(Memento m) {
+        state = m.getState();
+    }
+    
 }
