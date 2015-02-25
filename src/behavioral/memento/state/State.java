@@ -1,7 +1,11 @@
 package behavioral.memento.state;
 
 public class State {
-    
+
+    /**
+     * Memento - used to restore state of an object to a previous state.
+     * @param args
+     */
     public static void main(String[] args) {
         Originator originator = new Originator();
         Caretaker careTaker = new Caretaker();
