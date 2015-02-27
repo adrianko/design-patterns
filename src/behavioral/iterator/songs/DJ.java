@@ -1,5 +1,7 @@
 package behavioral.iterator.songs;
 
+import java.util.Iterator;
+
 public class DJ {
     
     SongIterator iter70sSongs;
@@ -10,6 +12,16 @@ public class DJ {
         iter70sSongs = newSongs70s;
         iter80sSongs = newSongs80s;
         iter90sSongs = newSongs90s;
+    }
+
+    public void printTheSongs(Iterator iterator){
+        while(iterator.hasNext()){
+            SongInfo songInfo = (SongInfo) iterator.next();
+            System.out.println(songInfo.getSongName());
+            System.out.println(songInfo.getBandName());
+            System.out.println(songInfo.getYearReleased() + "\n");
+
+        }
     }
 
 }
