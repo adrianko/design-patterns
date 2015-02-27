@@ -1,4 +1,4 @@
-package behavioral.iterator;
+package behavioral.iterator.name;
 
 public class NameRepository implements Container {
     
