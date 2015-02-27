@@ -15,19 +15,14 @@ public class DJ {
     }
 
     public void showTheSongs(){
-        Iterator Songs70s = iter70sSongs.createIterator();
-        Iterator Songs80s = iter80sSongs.createIterator();
-        Iterator Songs90s = iter90sSongs.createIterator();
-
         System.out.println("Songs of the 70s\n");
-        printTheSongs(Songs70s);
+        printTheSongs(iter70sSongs.createIterator());
 
         System.out.println("Songs of the 80s\n");
-        printTheSongs(Songs80s);
+        printTheSongs(iter80sSongs.createIterator());
 
         System.out.println("Songs of the 90s\n");
-        printTheSongs(Songs90s);
-
+        printTheSongs(iter90sSongs.createIterator());
     }
 
     public void printTheSongs(Iterator iterator) {
