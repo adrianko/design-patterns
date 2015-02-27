@@ -11,5 +11,17 @@ public class SongInfo {
         bandName = newBandName;
         yearReleased = newYearReleased;
     }
+
+    public String getSongName() { 
+        return songName; 
+    }
+    
+    public String getBandName() { 
+        return bandName; 
+    }
+    
+    public int getYearReleased() {
+        return yearReleased;
+    }
     
 }
