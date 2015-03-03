@@ -1,10 +1,10 @@
-package behavioral.state;
+package behavioral.state.player;
 
-public class StopState implements State {
+public class StartState implements State {
 
     @Override
     public void doAction(Context c) {
-        System.out.println("Player is in stop behavioral.state");
+        System.out.println("Player is in start behavioral.state");
         c.setState(this);
     }
 

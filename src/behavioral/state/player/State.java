@@ -1,4 +1,4 @@
-package behavioral.state;
+package behavioral.state.player;
 
 public interface State {
 
