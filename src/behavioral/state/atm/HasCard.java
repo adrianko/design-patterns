@@ -2,6 +2,8 @@ package behavioral.state.atm;
 
 public class HasCard implements ATMState {
     
+    ATMMachine atmMachine;
+    
     @Override
     public void insertCard() {
         
