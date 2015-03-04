@@ -12,7 +12,7 @@ public class ATMMachine implements GetATMData {
     int cashInMachine = 2000;
     boolean correctPinEntered = false;
 
-    public ATMMachine(){
+    public ATMMachine() {
         hasCard = new HasCard(this);
         noCard = new NoCard(this);
         hasCorrectPin = new HasPin(this);
@@ -55,12 +55,12 @@ public class ATMMachine implements GetATMData {
     
     @Override
     public ATMState getATMState() {
-        return null;
+        return atmState;
     }
 
     @Override
     public int getCashInMachine() {
-        return 0;
+        return cashInMachine;
     }
     
 }
