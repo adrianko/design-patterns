@@ -1,4 +1,4 @@
-package structural.proxy;
+package structural.proxy.image;
 
 public class RealImage implements Image {
 
