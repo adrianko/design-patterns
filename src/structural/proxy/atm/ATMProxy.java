@@ -4,12 +4,12 @@ public class ATMProxy implements GetATMData {
     
     @Override
     public ATMState getATMState() {
-        return null;
+        return new ATMMachine().getATMState();
     }
 
     @Override
     public int getCashInMachine() {
-        return 0;
+        return new ATMMachine().getCashInMachine();
     }
     
 }
