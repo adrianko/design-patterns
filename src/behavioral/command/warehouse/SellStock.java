@@ -1,4 +1,4 @@
-package behavioral.command;
+package behavioral.command.warehouse;
 
 public class SellStock implements Order {
     private Stock abcStock;

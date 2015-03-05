@@ -1,4 +1,4 @@
-package behavioral.command;
+package behavioral.command.warehouse;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +12,7 @@ public class Broker {
     }
 
     public void placeOrders() {
-        orderList.forEach(behavioral.command.Order::execute);
+        orderList.forEach(Order::execute);
         orderList.clear();
     }
     
