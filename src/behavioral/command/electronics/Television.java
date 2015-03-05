@@ -1,6 +1,6 @@
 package behavioral.command.electronics;
 
-public class Television {
+public class Television implements ElectronicDevice {
 
     private int volume = 0;
     
