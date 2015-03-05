@@ -3,8 +3,12 @@ package behavioral.command.electronics;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PlayWithRemote{
+public class PlayWithRemote {
 
+    /**
+     * Command - allows storage of list of commands for later use.
+     * @param args
+     */
     public static void main(String[] args){
         ElectronicDevice newDevice = TVRemote.getDevice();
         TurnTVOn onCommand = new TurnTVOn(newDevice);
